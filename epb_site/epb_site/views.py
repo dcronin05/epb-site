@@ -18,7 +18,7 @@ def home(request):
         return render(request, 'home.html', {'form': form, 'response': response})
     else:
         form = Statement()
-        return render(request, 'home.html', {'form': form})
+        return render(request, 'home.html', {'form': form, 'response': 'Enter some basic data to begin:'})
 
 def about(request):
     return HttpResponse("This is the about page")

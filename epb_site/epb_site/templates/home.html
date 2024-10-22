@@ -18,8 +18,12 @@
 <body>
 
     {% if request.method == "POST" %}
-            {{ response|safe }}
+        {{ response|safe }}
+    {% else %}
+        {{ response|safe }}
     {% endif %}
+
+
 
     <form action="" method="post">
         {{ form.as_p }}
