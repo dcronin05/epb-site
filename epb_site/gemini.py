@@ -37,5 +37,7 @@ chat_session = model.start_chat(
   ]
 )
 
+# print(chat_session.send_message("hello world!").text)
+
 
 
